@@ -49,6 +49,43 @@ const listaTeam = [
 
 console.log(listaTeam);
 
-
+//lista di ogetti 
 //se invece come valore voglio mettere un numero non lo metto dentro le virgolette
 //-------------------------------------------------------------
+const nomeTeam = document.querySelector(".nome-team")
+
+console.log("--------------------------------------------");
+
+for (let i = 0; i < listaTeam.length; i++) {
+    const personeDellTeam = listaTeam[i];
+    console.log(personeDellTeam.nome);
+    
+    
+}
+console.log("--------------------------------------------");
+
+for (let i = 0; i < listaTeam.length; i++) {
+    const personeDellTeam = listaTeam[i];
+    console.log(personeDellTeam.cognome);
+    
+}
+console.log("--------------------------------------------");
+
+for (let i = 0; i < listaTeam.length; i++) {
+    const personeDellTeam = listaTeam[i];
+    console.log(personeDellTeam.ruolo);
+    
+    
+}
+console.log("--------------------------------------------");
+
+
+
+for (let i = 0; i < listaTeam.length; i++) {
+    const member = listaTeam[i];
+    const nomeCognomeElement = document.getElementById(`nome-cognome${i + 1}`);
+    const professioneElement = document.getElementById(`professione${i + 1}`);
+
+    nomeCognomeElement.textContent = `${member.nome} ${member.cognome}`;
+    professioneElement.textContent = member.ruolo;
+}
