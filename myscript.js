@@ -56,36 +56,40 @@ const nomeTeam = document.querySelector(".nome-team")
 
 console.log("--------------------------------------------");
 
-for (let i = 0; i < listaTeam.length; i++) {
-    const personeDellTeam = listaTeam[i];
-    console.log(personeDellTeam.nome);
+// for (let i = 0; i < listaTeam.length; i++) {
+//     const personeDellTeam = listaTeam[i];
+//     console.log(personeDellTeam.nome);
     
     
-}
-console.log("--------------------------------------------");
+// }
+// console.log("--------------------------------------------");
 
-for (let i = 0; i < listaTeam.length; i++) {
-    const personeDellTeam = listaTeam[i];
-    console.log(personeDellTeam.cognome);
+// for (let i = 0; i < listaTeam.length; i++) {
+//     const personeDellTeam = listaTeam[i];
+//     console.log(personeDellTeam.cognome);
     
-}
-console.log("--------------------------------------------");
+// }
+// console.log("--------------------------------------------");
 
 for (let i = 0; i < listaTeam.length; i++) {
     const personeDellTeam = listaTeam[i];
     console.log(personeDellTeam.ruolo);
-    
+    console.log(personeDellTeam.cognome);
+    console.log(personeDellTeam.nome);
     
 }
 console.log("--------------------------------------------");
 
 
-
+//calcolo for
 for (let i = 0; i < listaTeam.length; i++) {
     const member = listaTeam[i];
-    const nomeCognomeElement = document.getElementById(`nome-cognome${i + 1}`);
-    const professioneElement = document.getElementById(`professione${i + 1}`);
+    const nomeCognomeElement = document.getElementById(`nome-cognome${i + 1}`);//+1 sul id
+    const professioneElement = document.getElementById(`professione${i + 1}`);//+1 sul id
 
     nomeCognomeElement.textContent = `${member.nome} ${member.cognome}`;
     professioneElement.textContent = member.ruolo;
 }
+
+
+//avrei potuto fare una funzione per risarmiare righe di codice e metterci dentro i nomi cognomi e ruolo 
